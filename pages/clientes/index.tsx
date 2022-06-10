@@ -19,15 +19,7 @@ const Clients = () => {
 
   return (
     <div>
-      <h1>Client Page</h1>
-      {/* {data &&
-        data.map((info, index) => (
-          <div key={index}>
-            <p>Id:{info.id}</p>
-            <p>title:{info.title}</p>
-            <br />
-          </div>
-        ))} */}
+      <h1 className="clientPage">Client Page</h1>
       {data && <List data={data}></List>}
     </div>
   );
