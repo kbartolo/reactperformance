@@ -17,4 +17,4 @@ const ItemList: FC<ItemListProps> = ({ id, title }) => {
   );
 };
 
-export default ItemList;
+export default React.memo(ItemList);

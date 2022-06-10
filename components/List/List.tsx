@@ -18,4 +18,4 @@ const List: FC<ListProps> = ({ data }) => {
   );
 };
 
-export default List;
+export default React.memo(List);

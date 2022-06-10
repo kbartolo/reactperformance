@@ -17,3 +17,20 @@
   padding: 8px;
   border: 1px dotted #d4d4d4;
 }
+
+.btn{
+  padding: 5px 15px ;
+  border-radius: 4px;
+  margin-right: 10px;
+
+  &-disabled{
+    opacity: 0.5
+  }
+}
+
+.btn-primary{
+  background-color: coral;
+  color: white;
+}
+
+
