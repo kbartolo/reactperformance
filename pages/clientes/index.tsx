@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-type Client = {
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
-};
+import List from "../../components";
+import { Client } from "../../types";
 
 const Clients = () => {
   const [data, setData] = useState<Client[]>([]);
@@ -25,14 +20,15 @@ const Clients = () => {
   return (
     <div>
       <h1>Client Page</h1>
-      {data &&
+      {/* {data &&
         data.map((info, index) => (
           <div key={index}>
             <p>Id:{info.id}</p>
             <p>title:{info.title}</p>
             <br />
           </div>
-        ))}
+        ))} */}
+      {data && <List data={data}></List>}
     </div>
   );
 };
